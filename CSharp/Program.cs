@@ -8,6 +8,8 @@ namespace CreateZugferd2_0_PdfDocument
 
         static void Main(string[] args)
         {
+            Vintasoft.Imaging.ImagingGlobalSettings.Register("REG_USER", "REG_EMAIL", "EXPIRATION_DATE", "REG_CODE");
+
             try
             {
                 CreateZugferd2_0_PdfDocument("blank.pdf", "zugferd-invoice.xml", "zugferd2_0_pdfFile.pdf");
